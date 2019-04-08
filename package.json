@@ -1,0 +1,13 @@
+{
+  "name": "wizard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^3.13.1"
+  },
+  "packages":[
+    "client",
+    "node-middleware"
+  ]
+}
