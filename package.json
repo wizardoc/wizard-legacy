@@ -1,13 +1,16 @@
 {
   "name": "wizard",
+  "private":true,
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "lerna": "^3.13.1"
   },
-  "packages":[
-    "client",
-    "node-middleware"
-  ]
+  "workspaces":{
+    "packages":[
+      "client",
+      "node-middleware"
+    ]
+  }
 }
