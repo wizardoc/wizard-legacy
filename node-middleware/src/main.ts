@@ -1,1 +1,1 @@
-console.info('Hello World')
+export {AppServerModule} from './app-server.module'
