@@ -1,10 +1,34 @@
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import { RouterModule, Routes } from '@angular/router'
+import { MainComponent } from "../components/main/main.component";
+import { PageNotFoundPage } from "../pages/index";
+
+const appRoutes: Routes = [
+  {
+    path:'/main',
+    component: MainComponent
+  },
+  {
+    path: '',
+    redirectTo: '/main',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: PageNotFoundPage
+  }
+]
 
 @NgModule({
   imports:[
-    CommonModule
+    RouterModule.forRoot(appRoutes)
   ],
-  declarations:[]
+  declarations:[
+    MainComponent,
+    PageNotFoundPage
+  ],
+  exports:[
+    RouterModule
+  ]
 })
 export class AppRoutingModule {}
