@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "module": "commonjs",
     "lib": ["dom", "esnext"],
     "strict": true,
     "rootDir": "src",
@@ -9,5 +10,8 @@
     "emitDecoratorMetadata": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules/**/*"]
+  "exclude": ["node_modules/**/*"],
+  "angularCompilerOptions": {
+    "entryModule": "./src/app-server.module#AppServerModule"
+  }
 }
