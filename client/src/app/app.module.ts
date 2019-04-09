@@ -8,10 +8,8 @@ import { AppRoutingModule } from './modules/app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
     AppRoutingModule
   ],

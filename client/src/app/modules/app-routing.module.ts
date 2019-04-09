@@ -5,7 +5,7 @@ import { PageNotFoundPage } from "../pages/index";
 
 const appRoutes: Routes = [
   {
-    path:'/main',
+    path:'main',
     component: MainComponent
   },
   {
