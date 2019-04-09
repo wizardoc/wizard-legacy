@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { AppRoutingModule } from './modules/app-routing.module';
 
+import {APP_ID} from '../../../shared'
+
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId:APP_ID}),
     AppRoutingModule
   ],
   providers: [],
