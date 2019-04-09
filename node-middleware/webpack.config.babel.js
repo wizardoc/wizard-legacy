@@ -1,7 +1,9 @@
+import Path from 'path'
+
 export default {
   entry: 'main.ts',
   output: {
-    path: './dist',
+    path: Path.resolve('./dist'),
     filename: 'main.bundle.js'
   },
   module: {
@@ -10,6 +12,10 @@ export default {
         test: /\.ts/,
         use:'awesome-ts-loader'
       },
+      {
+        test: /\.js/,
+        use: 'babel-loader'
+      }
     ]
   }
 }
