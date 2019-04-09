@@ -1,7 +1,8 @@
 import Path from 'path'
 
 export default {
-  entry: 'main.ts',
+  entry: './src/main.ts',
+  mode:'development',
   output: {
     path: Path.resolve('./dist'),
     filename: 'main.bundle.js'
