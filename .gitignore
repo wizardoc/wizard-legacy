@@ -7,3 +7,8 @@ node-middlewares/node_modules
 yarn-error.log
 client/yarn-error.log
 node-middlewares/yarn-error.log
+
+# dist
+dist
+client/dist
+node-middlewares/dist
