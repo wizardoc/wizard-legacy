@@ -5,6 +5,7 @@
     "lib": ["dom", "esnext"],
     "strict": true,
     "rootDir": "src",
+    "noImplicitAny": true,
     "outDir": "dist",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
